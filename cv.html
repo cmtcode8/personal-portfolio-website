@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV | Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Charbel Tauk</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html" class="active">CV</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cv-section">
+            <div class="container">
+                <h2>CV</h2>
+                
+                <div class="cv-box">
+                    <div class="cv-header">
+                        <img src="me.jpeg" alt="Profile Photo" class="profile-img">
+                        <div class="cv-intro">
+                            <h3>Charbel Tauk</h3>
+                            <p class="title">Business Student & Web Developer</p>
+                            <p>Email charbel.ma.tauk@gmail.com</p>
+                            <p>Phone: 71 852 844</p>
+                            <p>Location: Beirut , Lebanon </p>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h3>Education</h3>
+                        <div class="cv-item">
+                            <h4>Bachelor of Business Administration</h4>
+                            <p>Usek University, 2023 - Present</p>
+                            <p>GPA: 80.1 / 100 </p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>High School Diploma</h4>
+                            <p>GKG High School, 2019 - 2023</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML & CSS</li>
+                            <li>Basic JavaScript</li>
+                            <li>Data base</li>
+                            <li>Programming</li>
+                            <li>Business Analysis</li>
+                            <li>Customer Service</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-block">
+                        <h3>Experience</h3>
+                        <div class="cv-item">
+                            <h4>Web Design Intern</h4>
+                            <p>EURESKO company adma, Summer 2024</p>
+                            <p>Assisted in creating websites for small businesses.</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h3>Activities</h3>
+                        <div class="cv-item">
+                            <h4>Business Club</h4>
+                            <p>Active member organizing business workshops and networking events.</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>Volunteer Web Developer</h4>
+                            <p>Created websites for local non-profit organizations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Charbel Tauk. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+            this.classList.toggle('change');
+        });
+    </script>
+</body>
+</html>

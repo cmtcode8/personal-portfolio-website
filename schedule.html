@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weekly Schedule | Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Charbel Tauk</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="schedule.html" class="active">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="schedule-section">
+            <div class="container">
+                <h2>Weekly Course Schedule</h2>
+                <p>Spring Semester 2025</p>
+                
+                <div class="table-container">
+                    <table class="schedule">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00 - 10:30</td>
+                                <td class="course bus210">BUS210<br>Business</td>
+                                <td></td>
+                                <td class="course bus210">BUS210<br>Business</td>
+                                <td></td>
+                                <td class="course bus210">BUS210<br>Business</td>
+                            </tr>
+                            <tr>
+                                <td>10:45 - 12:15</td>
+                                <td></td>
+                                <td class="course mkt220">MKT220<br>Marketing</td>
+                                <td></td>
+                                <td class="course mkt220">MKT220<br>Marketing</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1:15 - 2:45</td>
+                                <td class="course csc350">CSC350<br>Web Development</td>
+                                <td></td>
+                                <td class="course csc350">CSC350<br>Web Development</td>
+                                <td></td>
+                                <td class="course csc350">CSC350<br>Web Development</td>
+                            </tr>
+                            <tr>
+                                <td>3:00 - 4:30</td>
+                                <td></td>
+                                <td class="course acc220">ACC220<br>Accounting 2</td>
+                                <td></td>
+                                <td class="course acc220">ACC220<br>Accounting 2</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="course-info">
+                    <h3>Course Information</h3>
+                    <div class="info-boxes">
+                        <div class="info-box bus210">
+                            <h4>BUS101: Business</h4>
+                            <p>Professor: Dr.JEAN</p>
+                            <p>Room: Business Building 305</p>
+                        </div>
+                        <div class="info-box mkt220">
+                            <h4>mkt220: Marketing </h4>
+                            <p>Professor: Ms.CLAUDIA</p>
+                            <p>Room: Business Building 202</p>
+                        </div>
+                        <div class="info-box csc350">
+                            <h4>csc350: Web Development</h4>
+                            <p>Professor: Dr.ZIAD</p>
+                            <p>Room: Engineering building 108</p>
+                        </div>
+                        <div class="info-box acc220">
+                            <h4>ACC220: Accounting 2</h4>
+                            <p>Professor: Dr.MHAMMAD</p>
+                            <p>Room: Business Building 204</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Charbel Tauk. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+            this.classList.toggle('change');
+        });
+    </script>
+</body>
+</html>
